@@ -1,4 +1,4 @@
-import os
+﻿import os
 import time
 import openai
 import streamlit as st
@@ -49,7 +49,7 @@ st.title("Patient Recruitement :mag:")
 # Description for PDF Analyzer
 st.markdown("""
     This assistant is your dedicated resource for ensuring compliance of patient recruitment materials with country-specific regulations. Here's what you can do:
-    - :file_folder: **Analyze requirements from your Excel file** to verify compliance with local regulations.
+    - :file_folder: **Analyze your file ** to verify compliance with local regulations.
     - :globe_with_meridians: **Check country-specific translation needs** to ensure effective communication.
     - :clipboard: Receive a **detailed compliance report** for specified documents and countries, covering aspects like Branding/Logo Requirements, Photo Inclusion, Study Medication Name Requirements, and more.
     - :mag_right: **Explore various document scenarios** and prepare your recruitment materials to meet all necessary legal standards.
@@ -99,7 +99,6 @@ if uploaded_file is not None and user_query:
         except Exception as e:
             st.error(f"An error occurred: {e}")
 
-# Show a message if the API key is not entered
-if not client:
-    st.warning("Please enter your OpenAI API key in the sidebar to use the app.")
-
+# Footer
+st.markdown("---")
+st.markdown("Developed with 💙 by Acolad")
