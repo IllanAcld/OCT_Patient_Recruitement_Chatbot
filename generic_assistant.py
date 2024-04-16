@@ -44,7 +44,7 @@ def pretty_print(messages):
     return "\n".join(responses)
 
 
-st.title("Patient Recruitement :mag:")
+st.title("Patient Recruitment :mag:")
 
 # Description for PDF Analyzer
 st.markdown("""
